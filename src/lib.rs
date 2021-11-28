@@ -5,6 +5,7 @@ use std::error::Error;
 type OString = Option<String>;
 type OInt32 = Option<i32>;
 
+#[derive(Clone)]
 pub struct Webhook {
     url: String,
     client: Client,
